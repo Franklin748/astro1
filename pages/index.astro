@@ -1,0 +1,25 @@
+---
+import Estrutura from "../layouts/Estrutura.astro"
+import Container from "../components/Container.astro"
+import Cards from "../components/Cards.astro"
+import Card from "../components/Card.astro"
+---
+
+<Estrutura title="Este é o titulo">
+     <Container>
+		<h1>Veja nosso estoque de carros</h1>
+        <Cards>
+           <Card carro="Fiat Uno VIvance" ano="2018" valor="38.000"/>
+           <Card carro="GM celta" ano="2010" valor="38.000"/>
+           <Card carro="Fiat marea" ano="1999" valor="38.000"/>
+           <Card carro="Honda Civic" ano="2017" valor="38.000"/>
+           <Card carro="Toyota Corolla" ano="2009" valor="38.000"/>
+		</Cards>
+	 </Container>
+</Estrutura>
+
+<style is:global>
+	h1{
+		font-size: .8rem;
+	}
+</style>

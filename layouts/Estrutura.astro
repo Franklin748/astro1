@@ -1,0 +1,35 @@
+---
+const name = "Ruan"
+const sala = "3° Semestre"
+
+const {title} = Astro.props
+
+import '@fontsource-variable/dm-sans';
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} - {name}</title>
+</head>
+<body>
+    <Header />
+    <main>
+        <slot />
+    </main>
+    <Footer />
+</body>
+</html>
+
+<style>
+    body, html, h1, h2, h3, h4, h5, h6, p{
+        font-family: 'DM Sans Variable', 'sans-serif';
+        margin: 0;
+        padding: 0;
+
+    }
+</style>

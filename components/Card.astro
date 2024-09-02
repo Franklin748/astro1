@@ -1,0 +1,32 @@
+---
+const  {carro, ano, valor} = Astro.props
+---
+
+<section>
+   <div>
+    Imagem
+   </div>
+   <h3>{carro}{{ano}}</h3>
+   <h2>R$ {valor}</h2> 
+</section>
+
+<style>
+    section{
+       border: 1px solid #c1c1c1;
+    }
+
+    div {
+        background-color: #01112C;
+        display: block;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    h3 {
+        color: #01112C;
+    }
+
+    h2 {
+        color: #01112C;
+    }
+</style>
